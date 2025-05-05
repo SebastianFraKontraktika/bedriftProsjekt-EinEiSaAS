@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>uruz</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="">
+    <script src="kontoSys.js"></script>
+
+    <label for="bNavn">Username:</label>
+    <input type="text" id="bNavn" class="border ">
+    <label for="pOrd">Passord:</label>
+    <input type="password" id="pOrd" class="border">
+    <input onclick="submit()" type="submit" value="submit">
+
+    <h1 class="font-bold text-xl">logg inn</h1>
+    <label for="loggBruk">username:</label>
+    <input type="text" name="jepp" id="loggBruk" class="border">
+    <label for="loggPass">passord:</label>
+    <input type="password" name="ja" id="loggPass" class="border">
+    <input type="submit" value="submit" onclick="logg()">
 </body>
 </html>
