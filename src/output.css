@@ -165,9 +165,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));

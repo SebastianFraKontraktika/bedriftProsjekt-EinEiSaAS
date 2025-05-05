@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+    --color-uruz-hoved: #550015;
+    --color-uruz-svart: #110004;
+    --color-uruz-hvit: #F6F2F3;
+    --color-red-border: #9F7A83;
+    --color-red-second: #CFB8BD;
+    --color-green-comp: #005540;
+    --color-border-comp: #7B9F96;
+    --color-second-comp: #B8CFCA;
+}

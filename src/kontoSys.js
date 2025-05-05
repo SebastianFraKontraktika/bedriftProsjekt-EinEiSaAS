@@ -1,4 +1,3 @@
-
 function submit() {
     let brukNavn = document.getElementById("bNavn").value;
     let passord = document.getElementById("pOrd").value;
@@ -16,7 +15,7 @@ function logg() {
             console.log("hurra")
             break
         } else {
-            console.log("fitte")
+            console.log("feil")
         }
 
     }
