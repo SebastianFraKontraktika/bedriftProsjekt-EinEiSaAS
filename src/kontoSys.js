@@ -13,6 +13,10 @@ function logg() {
         console.log(localStorage.getItem(bruker))
         if (loggBruker == bruker && loggPass == localStorage.getItem(bruker)) {
             console.log("hurra")
+            let kontoKp = document.getElementById("kontoKp")
+            let innloggKp = document.getElementById("innlogging")
+            kontoKp.style.display = 'block'
+            innloggKp.style.display = 'none'
             break
         } else {
             console.log("feil")
