@@ -25,3 +25,25 @@ function logg() {
     }
 
 }
+
+function visLogg() {
+    let B = document.getElementById("brukerSys");
+    let P = document.getElementById("passordSys");
+    if (P.style.display === 'none') {
+        P.style.display = 'block';
+        B.style.display = 'none';
+    } else {
+        P.style.display = 'none';
+    }
+}
+
+function visBruk() {
+    let B = document.getElementById("brukerSys");
+    let P = document.getElementById("passordSys");
+    if (B.style.display === 'none') {
+        B.style.display = 'block';
+        P.style.display = 'none';
+    } else {
+        B.style.display = 'none';
+    }
+}

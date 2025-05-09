@@ -20,7 +20,7 @@
         </div>
         <div id="innlogging">
                 <button onclick="visBruk()" class="border">Bli medlem</button>
-                <div class="hidden flex flex-col w-125 absolute">
+                <div id="brukerSys" class="hidden flex flex-col w-125 absolute">
                     <div>
                         <label for="bNavn">Username:</label>
                         <input type="text" id="bNavn" class="border" required>
@@ -32,13 +32,13 @@
                     <input onclick="submit()" type="submit" value="submit" class="bg-border-comp border">         
                 </div>
                 <button onclick="visLogg()" class="border">logg inn</button>
-                <div class="hidden flex flex-col w-125 absolute">
+                <div id="passordSys" class="hidden flex flex-col w-125 absolute">
                     <div>
-                        <label for="loggBruk">username:</label>
+                        <label for="loggBruk">Username:</label>
                         <input type="text" name="jepp" id="loggBruk" class="border" required>
                     </div>
                     <div>
-                        <label for="loggPass">passord:</label>
+                        <label for="loggPass">Passord:</label>
                         <input type="password" name="ja" id="loggPass" class="border mx-5 mt-10" required>
                     </div>
                     <input type="submit" value="submit" onclick="logg()">
