@@ -5,22 +5,18 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-uruz-hoved: #550015;
-    --color-green-comp: #005540;
     --color-border-comp: #7B9F96;
   }
 }
@@ -170,8 +166,23 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
@@ -191,6 +202,33 @@
   .w-1\/8 {
     width: calc(1/8 * 100%);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-75 {
+    width: calc(var(--spacing) * 75);
+  }
+  .w-85 {
+    width: calc(var(--spacing) * 85);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-125 {
+    width: calc(var(--spacing) * 125);
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .w-250 {
+    width: calc(var(--spacing) * 250);
+  }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
@@ -206,6 +244,9 @@
   }
   .bg-border-comp {
     background-color: var(--color-border-comp);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);

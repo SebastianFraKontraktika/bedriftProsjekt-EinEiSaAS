@@ -19,31 +19,37 @@
             </a>
         </div>
         <div id="innlogging">
-            <a href="medlem.html">
-                <button class="border">Bli medlem!</button>
-            </a>
-            <a href="innlogg.html">
-                <button class="border">logg inn</button>
-            </a>
+                <button onclick="visBruk()" class="border">Bli medlem</button>
+                <div class="hidden flex flex-col w-125 absolute">
+                    <div>
+                        <label for="bNavn">Username:</label>
+                        <input type="text" id="bNavn" class="border" required>
+                    </div>
+                    <div>
+                        <label for="pOrd">Passord:</label>
+                        <input type="password" id="pOrd" class="border mx-5 mt-10" required>
+                    </div>
+                    <input onclick="submit()" type="submit" value="submit" class="bg-border-comp border">         
+                </div>
+                <button onclick="visLogg()" class="border">logg inn</button>
+                <div class="hidden flex flex-col w-125 absolute">
+                    <div>
+                        <label for="loggBruk">username:</label>
+                        <input type="text" name="jepp" id="loggBruk" class="border" required>
+                    </div>
+                    <div>
+                        <label for="loggPass">passord:</label>
+                        <input type="password" name="ja" id="loggPass" class="border mx-5 mt-10" required>
+                    </div>
+                    <input type="submit" value="submit" onclick="logg()">
+                </div>
         </div>
-        <a id="kontoKp" class="hidden" href="">
+        <a id="kontoKp" class="hidden" href="konto.html">
             <Button class="border">konto</Button>
         </a>
         <input type="text" name="search" id="sokBar" class="border mr-5 w-1/8" placeholder="Search">
     </nav>
 
-    <label for="bNavn">Username:</label>
-    <input type="text" id="bNavn" class="border" required>
-    <label for="pOrd">Passord:</label>
-    <input type="password" id="pOrd" class="border " required>
-    <input onclick="submit()" type="submit" value="submit" class="bg-border-comp border">
-    
-    <h1 class="font-bold text-xl mt-7">logg inn</h1>
-    <label for="loggBruk">username:</label>
-    <input type="text" name="jepp" id="loggBruk" class="border" required>
-    <label for="loggPass">passord:</label>
-    <input type="password" name="ja" id="loggPass" class="border" required>
-    <input type="submit" value="submit" onclick="logg()">
 
 </body>
 </html>
