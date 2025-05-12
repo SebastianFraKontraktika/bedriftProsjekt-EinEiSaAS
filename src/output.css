@@ -169,17 +169,8 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
-  }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -202,29 +193,8 @@
   .w-1\/8 {
     width: calc(1/8 * 100%);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
-  .w-75 {
-    width: calc(var(--spacing) * 75);
-  }
-  .w-85 {
-    width: calc(var(--spacing) * 85);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
   .w-125 {
     width: calc(var(--spacing) * 125);
-  }
-  .w-150 {
-    width: calc(var(--spacing) * 150);
-  }
-  .w-250 {
-    width: calc(var(--spacing) * 250);
   }
   .flex-col {
     flex-direction: column;
@@ -245,9 +215,6 @@
   .bg-border-comp {
     background-color: var(--color-border-comp);
   }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -257,10 +224,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
