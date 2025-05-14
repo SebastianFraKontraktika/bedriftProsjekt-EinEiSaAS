@@ -13,36 +13,36 @@
         </a>
         <div class="flex justify-center">
             <a href="utstyr.html">
-                <button class="mr-5 p-1">EQUIPMENT</button>
+                <button class="mr-5 p-1 font-[Trebuchet_MS]">EQUIPMENT</button>
             </a>
             <a href="service.html">
                 <button class="ml-5 p-1">SERVICES</button>
             </a>
         </div>
         <div id="innlogging">
-            <button onclick="visBruk()" class="border">Bli medlem</button>
-            <div id="brukerSys" class="hidden flex flex-col w-125 absolute">
-                <div>
+            <button id="lagBrukBtn" onclick="visBruk()" class="rounded-t p-1">BLI MEDLEM</button>
+            <div id="brukerSys" class="hidden flex flex-col w-75 absolute bg-red-second p-3 rounded-tr rounded-b">
+                <div class="flex flex-col">
                     <label for="bNavn">Username:</label>
-                    <input type="text" id="bNavn" class="border" required>
+                    <input type="text" id="bNavn" class="rounded bg-uruz-hvit" required>
                 </div>
-                <div>
+                <div class="flex flex-col">
                     <label for="pOrd">Passord:</label>
-                    <input type="password" id="pOrd" class="border mx-5 mt-10" required>
+                    <input type="password" id="pOrd" class="rounded bg-uruz-hvit" required>
                 </div>
-                <input onclick="submit()" type="submit" value="submit" class="bg-border-comp border">         
+                <input onclick="submit()" type="submit" value="submit" class="bg-border-comp rounded mt-2 p-1">         
             </div>
-            <button onclick="visLogg()" class="border">logg inn</button>
-            <div id="passordSys" class="hidden flex flex-col w-125 absolute">
-                <div>
+            <button id="loggInBtn" class="rounded-t ml-4 p-1" onclick="visLogg()">LOGG INN</button>
+            <div id="passordSys" class="hidden flex flex-col w-75 absolute bg-red-second p-3 rounded">
+                <div class="flex flex-col">
                     <label for="loggBruk">Username:</label>
-                    <input type="text" name="jepp" id="loggBruk" class="border" required>
+                    <input type="text" name="jepp" id="loggBruk" class="rounded bg-uruz-hvit" required>
                 </div>
-                <div>
+                <div class="flex flex-col">
                     <label for="loggPass">Passord:</label>
-                    <input type="password" name="ja" id="loggPass" class="border mx-5 mt-10" required>
+                    <input type="password" name="ja" id="loggPass" class="rounded bg-uruz-hvit" required>
                 </div>
-                <input type="submit" value="submit" onclick="logg()">
+                <input type="submit" value="submit" onclick="logg()" class="bg-border-comp rounded mt-2 p-1">
             </div>
         </div>
         <a id="kontoKp" class="hidden" href="konto.html">
@@ -53,35 +53,33 @@
             <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
         </div>
     </nav>
-    <article>
+    <article class="flex flex-col items-center mb-50">
         <img src="./Nettside_Bilder/skogsPic.jpg" alt="Skog">
-        <a href="">
             <img src="./Nettside_Bilder/pushup-1462808858.gif" alt="pushUp">
-            <p>DIGITAL PT</p>
-        </a>
+            <a class="text-9xl font-semibold" href="service.html"><p>DIGITAL PT</p></a>
     </article>
     <footer class="flex flex-row justify-evenly bg-uruz-hvit">
-        <div>
-            <h1 class="text-2xl font-bold mb-10">Products:</h1>
-            <a href="">equipment</a>
-            <a href="">Shoes</a>
-            <a href="">Shirts</a>
-            <a href="">Outwear</a>
-            <a href="">Pants</a>
+        <div class="flex flex-col">
+            <h1 class="text-2xl font-bold mb-8 mt-2">Products:</h1>
+            <a class="mb-2" href="">equipment</a>
+            <a class="mb-2" href="">Shoes</a>
+            <a class="mb-2" href="">Shirts</a>
+            <a class="mb-2" href="">Outwear</a>
+            <a class="mb-2" href="">Pants</a>
         </div>
         <div>
-            <h1 class="text-2xl font-bold mb-10">Services:</h1>
+            <h1 class="text-2xl font-bold mb-8 mt-2">Services:</h1>
             <a href="">Digital PT</a>
         </div>
-        <div>
-            <h1 class="text-2xl font-bold mb-10">Sosials:</h1>
-            <a href="">Instragram</a>
-            <a href="">Facebook</a>
-            <a href="">Tiktok</a>
-            <a href="">X(Twitter)</a>
+        <div class="flex flex-col">
+            <h1 class="text-2xl font-bold mb-8 mt-2">Sosials:</h1>
+            <a class="mb-2" href="">Instragram</a>
+            <a class="mb-2" href="">Facebook</a>
+            <a class="mb-2" href="">Tiktok</a>
+            <a class="mb-2" href="">X(Twitter)</a>
         </div>
         <div>
-            <h1 class="text-2xl font-bold mb-10">Contacts:</h1>
+            <h1 class="text-2xl font-bold mb-8 mt-2">Contacts:</h1>
             <p>uruz@mail.co</p>
         </div>
     </footer>

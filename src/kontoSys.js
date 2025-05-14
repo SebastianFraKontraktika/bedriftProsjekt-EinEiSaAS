@@ -39,24 +39,34 @@ function logg() {
 }
 
 function visLogg() {
+    let loggInnKp = document.getElementById("loggInBtn");
+    let lagBrukKp = document.getElementById("lagBrukBtn");
     let B = document.getElementById("brukerSys");
     let P = document.getElementById("passordSys");
     if (P.style.display === 'none') {
+        loggInnKp.style.backgroundColor = '#CFB8BD';
+        lagBrukKp.style.backgroundColor = 'white'
         P.style.display = 'block';
         B.style.display = 'none';
     } else {
         P.style.display = 'none';
+        loggInnKp.style.backgroundColor = 'white';
     }
 }
 
 function visBruk() {
+    let loggInnKp = document.getElementById("loggInBtn");
+    let lagBrukKp = document.getElementById("lagBrukBtn");
     let B = document.getElementById("brukerSys");
     let P = document.getElementById("passordSys");
     if (B.style.display === 'none') {
+        lagBrukKp.style.backgroundColor = '#CFB8BD';
+        loggInnKp.style.backgroundColor = 'white';
         B.style.display = 'block';
         P.style.display = 'none';
     } else {
         B.style.display = 'none';
+        lagBrukKp.style.backgroundColor = 'white';
     }
 }
 function reset() {
