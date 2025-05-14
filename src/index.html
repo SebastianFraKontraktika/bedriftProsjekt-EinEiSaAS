@@ -6,15 +6,17 @@
     <title>uruz</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="">
-    <nav class="flex justify-between items-center text-2xl font-bold py-5">
-        <p class="ml-5">Hei Hei</p>
+<body class="box-border size-full m-0 p-0">
+    <nav class="flex justify-between items-center text-2xl font-bold py-5 shadow-[inset_0_-8px_12px_rgba(0,0,0,0.6)]">
+        <a href="index.html">
+            <img src="./Nettside_Bilder/URUZ-logo1.png" class="size-17 ml-5" alt="UruzLogo">
+        </a>
         <div class="flex justify-center">
             <a href="utstyr.html">
-                <button class="mr-5 border p-1">utstyr</button>
+                <button class="mr-5 p-1">EQUIPMENT</button>
             </a>
             <a href="service.html">
-                <button class="ml-5 border p-1">service</button>
+                <button class="ml-5 p-1">SERVICES</button>
             </a>
         </div>
         <div id="innlogging">
@@ -44,26 +46,43 @@
             </div>
         </div>
         <a id="kontoKp" class="hidden" href="konto.html">
-            <Button class="border">konto</Button>
+            <Button class="">KONTO</Button>
         </a>
-        <input type="text" name="search" id="sokBar" class="border mr-5 w-1/8" placeholder="Search">
+        <div class="bg-uruz-hvit rounded mr-5 w-1/8 flex flex-row">
+            <img class="size-1/5 p-2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fmagnifying-glass-icon-transparent%2Fmagnifying-glass-icon-transparent-6.jpg&f=1&nofb=1&ipt=cab8ddaf74f33d91752e60a1ff83cd66b9a2bd175a896d2f076afec4f6d2b369" alt="skittPomfritt">
+            <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
+        </div>
     </nav>
+    <article>
+        <img src="./Nettside_Bilder/skogsPic.jpg" alt="Skog">
+        <a href="">
+            <img src="./Nettside_Bilder/pushup-1462808858.gif" alt="pushUp">
+            <p>DIGITAL PT</p>
+        </a>
+    </article>
     <footer class="flex flex-row justify-evenly bg-uruz-hvit">
         <div>
-            <h1 class="text-2xl font-bold mb-10">placeholder</h1>
-            <p>placeholder</p>
+            <h1 class="text-2xl font-bold mb-10">Products:</h1>
+            <a href="">equipment</a>
+            <a href="">Shoes</a>
+            <a href="">Shirts</a>
+            <a href="">Outwear</a>
+            <a href="">Pants</a>
         </div>
         <div>
-            <h1 class="text-2xl font-bold mb-10">placeholder</h1>
-            <p>placeholder</p>
+            <h1 class="text-2xl font-bold mb-10">Services:</h1>
+            <a href="">Digital PT</a>
         </div>
         <div>
-            <h1 class="text-2xl font-bold mb-10">placeholder</h1>
-            <p>placeholder</p>
+            <h1 class="text-2xl font-bold mb-10">Sosials:</h1>
+            <a href="">Instragram</a>
+            <a href="">Facebook</a>
+            <a href="">Tiktok</a>
+            <a href="">X(Twitter)</a>
         </div>
         <div>
-            <h1 class="text-2xl font-bold mb-10">placeholder</h1>
-            <p>placeholder</p>
+            <h1 class="text-2xl font-bold mb-10">Contacts:</h1>
+            <p>uruz@mail.co</p>
         </div>
     </footer>
     <button onclick="reset()">reset</button>
