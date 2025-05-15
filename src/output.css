@@ -18,9 +18,12 @@
     --text-9xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-uruz-hvit: #F6F2F3;
+    --color-red-border: #9F7A83;
     --color-red-second: #CFB8BD;
     --color-border-comp: #7B9F96;
   }
@@ -192,6 +195,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -281,8 +287,23 @@
     width: 100%;
     height: 100%;
   }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
   .h-75 {
     height: calc(var(--spacing) * 75);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-85 {
+    height: calc(var(--spacing) * 85);
+  }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
+  .h-95 {
+    height: calc(var(--spacing) * 95);
   }
   .w-1\/8 {
     width: calc(1/8 * 100%);
@@ -292,6 +313,9 @@
   }
   .w-15 {
     width: calc(var(--spacing) * 15);
+  }
+  .w-70 {
+    width: calc(var(--spacing) * 70);
   }
   .w-75 {
     width: calc(var(--spacing) * 75);
@@ -326,6 +350,12 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-t {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
@@ -336,6 +366,17 @@
   .rounded-b {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-red-border {
+    border-color: var(--color-red-border);
   }
   .bg-border-comp {
     background-color: var(--color-border-comp);
@@ -390,6 +431,11 @@
     --tw-shadow: inset 0 -8px 12px var(--tw-shadow-color, rgba(0,0,0,0.6));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -463,6 +509,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
