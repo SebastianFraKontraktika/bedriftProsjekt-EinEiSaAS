@@ -7,20 +7,20 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="box-border size-full m-0 p-0">
-    <nav class="flex justify-between items-center text-2xl font-bold py-5 shadow-[inset_0_-8px_12px_rgba(0,0,0,0.6)]">
+    <nav class="flex justify-between items-center text-2xl font-[Trebuchet_MS] font-bold py-5 shadow-[inset_0_-8px_12px_rgba(0,0,0,0.6)]">
         <a href="index.html">
             <img src="./Nettside_Bilder/URUZ-logo1.png" class="size-17 ml-5" alt="UruzLogo">
         </a>
         <div class="flex justify-center">
             <a href="utstyr.html">
-                <button class="mr-5 p-1 font-[Trebuchet_MS]">EQUIPMENT</button>
+                <button class="mr-5 p-1 cursor-pointer">EQUIPMENT</button>
             </a>
             <a href="service.html">
-                <button class="ml-5 p-1">SERVICES</button>
+                <button class="ml-5 p-1 cursor-pointer">SERVICES</button>
             </a>
         </div>
         <div id="innlogging">
-            <button id="lagBrukBtn" onclick="visBruk()" class="rounded-t p-1">BLI MEDLEM</button>
+            <button id="lagBrukBtn" onclick="visBruk()" class="rounded-t p-1 cursor-pointer">BLI MEDLEM</button>
             <div id="brukerSys" class="hidden flex flex-col w-75 absolute bg-red-second p-3 rounded-tr rounded-b">
                 <div class="flex flex-col">
                     <label for="bNavn">Username:</label>
@@ -30,9 +30,9 @@
                     <label for="pOrd">Passord:</label>
                     <input type="password" id="pOrd" class="rounded bg-uruz-hvit" required>
                 </div>
-                <input onclick="submit()" type="submit" value="submit" class="bg-border-comp rounded mt-2 p-1">         
+                <input onclick="submit()" type="submit" value="submit" class="bg-border-comp rounded mt-2 p-1 cursor-pointer">         
             </div>
-            <button id="loggInBtn" class="rounded-t ml-4 p-1" onclick="visLogg()">LOGG INN</button>
+            <button id="loggInBtn" class="rounded-t ml-4 p-1 cursor-pointer" onclick="visLogg()">LOGG INN</button>
             <div id="passordSys" class="hidden flex flex-col w-75 absolute bg-red-second p-3 rounded">
                 <div class="flex flex-col">
                     <label for="loggBruk">Username:</label>
@@ -42,26 +42,29 @@
                     <label for="loggPass">Passord:</label>
                     <input type="password" name="ja" id="loggPass" class="rounded bg-uruz-hvit" required>
                 </div>
-                <input type="submit" value="submit" onclick="logg()" class="bg-border-comp rounded mt-2 p-1">
+                <input type="submit" value="submit" onclick="logg()" class="bg-border-comp rounded mt-2 p-1 cursor-pointer">
             </div>
         </div>
         <a id="kontoKp" class="hidden" href="konto.html">
-            <Button class="">KONTO</Button>
+            <div class="flex flex-row">
+                <img class="size-7 mr-2" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png" alt="nei">
+                <Button class="cursor-pointer">PROFIL</Button>
+            </div>
         </a>
         <div class="bg-uruz-hvit rounded mr-5 w-1/8 flex flex-row">
             <img class="size-1/5 p-2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fmagnifying-glass-icon-transparent%2Fmagnifying-glass-icon-transparent-6.jpg&f=1&nofb=1&ipt=cab8ddaf74f33d91752e60a1ff83cd66b9a2bd175a896d2f076afec4f6d2b369" alt="skittPomfritt">
             <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
         </div>
     </nav>
-    <article class="flex flex-col items-center mb-50">
+    <article class="flex flex-col items-center mb-50 font-[Trebuchet_MS]">
         <img src="./Nettside_Bilder/skogsPic.jpg" alt="Skog">
             <img src="./Nettside_Bilder/pushup-1462808858.gif" alt="pushUp">
             <a class="text-9xl font-semibold" href="service.html"><p>DIGITAL PT</p></a>
     </article>
-    <footer class="flex flex-row justify-evenly bg-uruz-hvit">
+    <footer class="flex flex-row justify-evenly bg-uruz-hvit font-[Trebuchet_MS]">
         <div class="flex flex-col">
             <h1 class="text-2xl font-bold mb-8 mt-2">Products:</h1>
-            <a class="mb-2" href="">equipment</a>
+            <a class="mb-2" href="">Equipment</a>
             <a class="mb-2" href="">Shoes</a>
             <a class="mb-2" href="">Shirts</a>
             <a class="mb-2" href="">Outwear</a>

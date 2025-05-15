@@ -2,7 +2,6 @@ x = document.cookie
 console.log(x)
 
 if(x == "value=true") {
-    console.log("hallo")
     let K = document.getElementById("kontoKp");
     let I = document.getElementById("innlogging");
     K.style.display = 'block';
@@ -10,28 +9,35 @@ if(x == "value=true") {
 }
 
 function submit() {
+    let lagBrukKp = document.getElementById("lagBrukBtn");
+    let B = document.getElementById("brukerSys");
     let brukNavn = document.getElementById("bNavn").value;
     let passord = document.getElementById("pOrd").value;
     localStorage.setItem(brukNavn, passord)
+    lagBrukKp.style.backgroundColor = 'white';
+    B.style.display = 'none';
 }
 
 function logg() {
     for (var i = 0; i < localStorage.length; i++){
-        let loggBruker = document.getElementById("loggBruk").value;
-        let loggPass = document.getElementById("loggPass").value;
+        let loggBruker = document.getElementById("loggBruk");
+        let loggPass = document.getElementById("loggPass");
         let bruker = localStorage.key(i)
         console.log(bruker)
         console.log(localStorage.getItem(bruker))
-        if (loggBruker == bruker && loggPass == localStorage.getItem(bruker)) {
+        if (loggBruker.value == bruker && loggPass.value == localStorage.getItem(bruker)) {
             console.log("hurra")
             let kontoKp = document.getElementById("kontoKp")
             let innloggKp = document.getElementById("innlogging")
             kontoKp.style.display = 'block'
             innloggKp.style.display = 'none'
             document.cookie = "value=true"
+            window.alert("du er nå innlogget!")
             break
         } else {
-            console.log("feil")
+            window.alert("Feil brukernavn eller passord");
+            loggBruker.style.backgroundColor = '#9F7A83';
+            loggPass.style.backgroundColor = '#9F7A83';
         }
 
     }
