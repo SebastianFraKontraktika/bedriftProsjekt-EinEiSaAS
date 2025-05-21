@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Din konto</title>
+    <title>Din profil</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="flex justify-between items-center text-2xl font-[Trebuchet_MS] font-bold py-5">
+        <a href="index.html">
+            <img src="./Nettside_Bilder/URUZ-logo1.png" class="size-17 ml-5" alt="UruzLogo">
+        </a>
+        <a href="konto.html">
+            <button class="ml-25 p-1 cursor-pointer">DIN PROFIL</button>
+        </a>
+        <div class="bg-uruz-hvit rounded mr-5 w-1/8 flex flex-row">
+            <img class="size-1/5 p-2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fmagnifying-glass-icon-transparent%2Fmagnifying-glass-icon-transparent-6.jpg&f=1&nofb=1&ipt=cab8ddaf74f33d91752e60a1ff83cd66b9a2bd175a896d2f076afec4f6d2b369" alt="skittPomfritt">
+            <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
+        </div>
+    </header>
+    <section class="flex flex-row">
+        <article class="">
+            <div class="overflow-auto whitespace-nowrap bg-uruz-hvit h-95">
+                <h1 class="font-bold text-2xl font-[Trebuchet_MS] ml-5">KUPONGER</h1>
+                <div class="flex flex-row">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="kuponger">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="kuponger">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="kuponger">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="kuponger">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="kuponger">
+                </div>
+            </div>
+            <div class="overflow-auto whitespace-nowrap h-95">
+                <h1 class="font-bold text-2xl font-[Trebuchet_MS] ml-5">TIDLIGERE KJØP</h1>
+                <div class="flex flex-row">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="tidligereKjøp">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="tidligereKjøp">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="tidligereKjøp">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="tidligereKjøp">
+                    <img class="h-70 w-70 m-5 rounded-4xl border-4 border-red-border" src="./Nettside_Bilder/URUZ-logo1.png" alt="tidligereKjøp">
+                </div>
+            </div>
+        </article>
+        <article class="bg-blue-500">
+            <img class="w-75" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png" alt="kontobilde">
+            <label for="Navn">NAME:</label>
+            <input type="text" value="Ole Nordmann" readonly name="Navn">
+            <label for="username">USERNAME:</label>
+            <input type="text" value="Ole" readonly name="username">
+            <label for="dato">BIRTH:</label>
+            <input type="date" readonly name="dato">
+        </article>
+    </section>
+    <footer class="flex flex-row justify-evenly bg-uruz-hvit font-[Trebuchet_MS]">
+        <div class="flex flex-col">
+            <h1 class="text-2xl font-bold mb-8 mt-2">Products:</h1>
+            <a class="mb-2" href="utstyr.html">Equipment</a>
+            <a class="mb-2" href="">Shoes</a>
+            <a class="mb-2" href="">Shirts</a>
+            <a class="mb-2" href="">Outwear</a>
+            <a class="mb-2" href="">Pants</a>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mb-8 mt-2">Services:</h1>
+            <a href="">Digital PT</a>
+        </div>
+        <div class="flex flex-col">
+            <h1 class="text-2xl font-bold mb-8 mt-2">Sosials:</h1>
+            <a class="mb-2" href="">Instragram</a>
+            <a class="mb-2" href="">Facebook</a>
+            <a class="mb-2" href="">Tiktok</a>
+            <a class="mb-2" href="">X(Twitter)</a>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mb-8 mt-2">Contacts:</h1>
+            <p>uruz@mail.co</p>
+        </div>
+    </footer>
 </body>
 </html>
