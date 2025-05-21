@@ -242,6 +242,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .size-1\/5 {
     width: calc(1/5 * 100%);
     height: calc(1/5 * 100%);
@@ -267,6 +270,9 @@
   .h-200 {
     height: calc(var(--spacing) * 200);
   }
+  .h-500 {
+    height: calc(var(--spacing) * 500);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -281,6 +287,12 @@
   }
   .w-75 {
     width: calc(var(--spacing) * 75);
+  }
+  .w-140 {
+    width: calc(var(--spacing) * 140);
+  }
+  .w-500 {
+    width: calc(var(--spacing) * 500);
   }
   .w-full {
     width: 100%;
