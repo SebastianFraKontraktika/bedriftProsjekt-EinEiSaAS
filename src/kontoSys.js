@@ -79,3 +79,31 @@ function reset() {
     document.cookie = "value=false"
     localStorage.clear()
 }
+
+function change() {
+    let navn = document.getElementById("navnId");
+    let user = document.getElementById("brukId");
+    let dato = document.getElementById("datoBruk");
+    let submitChg = document.getElementById("submitChange");
+    submitChg.style.display = 'block';
+    navn.removeAttribute("readonly");
+    user.removeAttribute("readonly");
+    dato.removeAttribute("readonly");
+    navn.style.border = "medium solid #9F7A83";
+    user.style.border = "medium solid #9F7A83";
+    dato.style.border = "medium solid #9F7A83";
+}
+
+function submitChange() {
+    let navn = document.getElementById("navnId");
+    let user = document.getElementById("brukId");
+    let dato = document.getElementById("datoBruk");
+    let submitChg = document.getElementById("submitChange");
+    navn.style.border = "none";
+    user.style.border = "none";
+    dato.style.border = "none";
+    submitChg.style.display = "none";
+    navn.setAttribute('readonly', true);
+    user.setAttribute('readonly', true);
+    dato.setAttribute('readonly', true);
+}
