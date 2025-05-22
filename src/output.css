@@ -182,6 +182,9 @@
   .absolute {
     position: absolute;
   }
+  .float-none {
+    float: none;
+  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -245,6 +248,9 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
   .size-1\/5 {
     width: calc(1/5 * 100%);
     height: calc(1/5 * 100%);
@@ -270,9 +276,6 @@
   .h-200 {
     height: calc(var(--spacing) * 200);
   }
-  .h-500 {
-    height: calc(var(--spacing) * 500);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -288,14 +291,14 @@
   .w-75 {
     width: calc(var(--spacing) * 75);
   }
-  .w-140 {
-    width: calc(var(--spacing) * 140);
-  }
-  .w-500 {
-    width: calc(var(--spacing) * 500);
-  }
   .w-full {
     width: 100%;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -305,6 +308,9 @@
   }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -323,6 +329,21 @@
   }
   .overflow-auto {
     overflow: auto;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -362,6 +383,9 @@
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
+  }
+  .border-inherit {
+    border-color: inherit;
   }
   .border-red-border {
     border-color: var(--color-red-border);
