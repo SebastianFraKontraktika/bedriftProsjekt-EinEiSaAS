@@ -16,7 +16,15 @@
         </a>
         <div class="bg-uruz-hvit rounded mr-5 w-1/8 flex flex-row">
             <img class="size-1/5 p-2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fmagnifying-glass-icon-transparent%2Fmagnifying-glass-icon-transparent-6.jpg&f=1&nofb=1&ipt=cab8ddaf74f33d91752e60a1ff83cd66b9a2bd175a896d2f076afec4f6d2b369" alt="skittPomfritt">
-            <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
+            <form onsubmit="searchBar()">
+                <input list="listOpt" class="w-full" type="text" name="search" id="sokBar" placeholder="Search" required>
+                <datalist id="listOpt">
+                    <option value="service">
+                    <option value="clothes">
+                    <option value="gear">
+                    <option value="shoes">
+                </datalist>
+            </form>
         </div>
     </header>
 
@@ -108,5 +116,6 @@
             <p>uruz@mail.co</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

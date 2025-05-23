@@ -49,14 +49,16 @@ function visLogg() {
     let lagBrukKp = document.getElementById("lagBrukBtn");
     let B = document.getElementById("brukerSys");
     let P = document.getElementById("passordSys");
-    if (P.style.display === 'none') {
-        loggInnKp.style.backgroundColor = '#CFB8BD';
+    if (P.style.display === 'block') {
+        loggInnKp.style.backgroundColor = 'white';
         lagBrukKp.style.backgroundColor = 'white'
-        P.style.display = 'block';
+        P.style.display = 'none';
         B.style.display = 'none';
     } else {
-        P.style.display = 'none';
-        loggInnKp.style.backgroundColor = 'white';
+        P.style.display = 'block';
+        B.style.display = 'none';
+        loggInnKp.style.backgroundColor = '#CFB8BD';
+        lagBrukKp.style.backgroundColor = 'white';
     }
 }
 
@@ -65,14 +67,16 @@ function visBruk() {
     let lagBrukKp = document.getElementById("lagBrukBtn");
     let B = document.getElementById("brukerSys");
     let P = document.getElementById("passordSys");
-    if (B.style.display === 'none') {
-        lagBrukKp.style.backgroundColor = '#CFB8BD';
+    if (B.style.display === 'block') {
+        lagBrukKp.style.backgroundColor = 'white';
         loggInnKp.style.backgroundColor = 'white';
-        B.style.display = 'block';
+        B.style.display = 'none';
         P.style.display = 'none';
     } else {
-        B.style.display = 'none';
-        lagBrukKp.style.backgroundColor = 'white';
+        B.style.display = 'block';
+        P.style.display = 'none';
+        lagBrukKp.style.backgroundColor = '#CFB8BD';
+        loggInnKp.style.backgroundColor = 'white';
     }
 }
 function reset() {

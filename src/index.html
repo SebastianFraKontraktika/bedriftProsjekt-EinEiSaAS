@@ -7,6 +7,10 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="box-border size-full m-0 p-0">
+    <script>
+        var customWindow = window.open('', '_blank', ''); 
+        customWindow.close();
+    </script>
     <nav class="flex justify-between items-center text-2xl font-[Trebuchet_MS] font-bold py-5 shadow-[inset_0_-8px_12px_rgba(0,0,0,0.6)]">
         <a href="index.html">
             <img src="./Nettside_Bilder/URUZ-logo1.png" class="size-17 ml-5" alt="UruzLogo">
@@ -53,7 +57,15 @@
         </a>
         <div class="bg-uruz-hvit rounded mr-5 w-1/8 flex flex-row">
             <img class="size-1/5 p-2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fmagnifying-glass-icon-transparent%2Fmagnifying-glass-icon-transparent-6.jpg&f=1&nofb=1&ipt=cab8ddaf74f33d91752e60a1ff83cd66b9a2bd175a896d2f076afec4f6d2b369" alt="skittPomfritt">
-            <input class="w-full" type="text" name="search" id="sokBar" placeholder="Search">
+            <form onsubmit="searchBar()">
+                <input list="listOpt" class="w-full" type="text" name="search" id="sokBar" placeholder="Search" required>
+                <datalist id="listOpt">
+                    <option value="service">
+                    <option value="clothes">
+                    <option value="gear">
+                    <option value="shoes">
+                </datalist>
+            </form>
         </div>
     </nav>
     <article class="flex flex-col items-center mb-50 font-[Trebuchet_MS]">
@@ -87,5 +99,6 @@
         </div>
     </footer>
     <script src="kontoSys.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
